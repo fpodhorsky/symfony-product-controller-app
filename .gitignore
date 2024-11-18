@@ -8,3 +8,7 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+
+/public/query_counter.json
+.idea
+.DS_Store

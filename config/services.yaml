@@ -32,3 +32,8 @@ services:
         class: 'App\Service\QueryCounter'
         arguments:
             $queryCounterFilePath: '%kernel.project_dir%/public/query_counter.json'
+
+    App\Controller\ProductController:
+        arguments:
+            $cache: '@app.plaintext_cache'
+            $queryCounter: '@app.query_counter'

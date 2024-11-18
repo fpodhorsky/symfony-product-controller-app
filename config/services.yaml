@@ -27,3 +27,8 @@ services:
         class: 'App\Service\PlainTextCache'
         arguments:
             $cacheDir: '%kernel.cache_dir%/plaintext_cache'
+
+    app.query_counter:
+        class: 'App\Service\QueryCounter'
+        arguments:
+            $queryCounterFilePath: '%kernel.project_dir%/public/query_counter.json'
